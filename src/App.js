@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import { Container } from 'react-bootstrap';
 import { Button, Stack } from 'react-bootstrap';
-import './App.css';
+
 import BudgetCard from './Components/BudgetCard';
 import AddBudgetModal from './Components/AddBudgetModal';
 import AddExpenseModal from './Components/AddExpenseModal';
@@ -27,7 +27,7 @@ function App() {
   return (
     <>
    <Container className='my-4'>
-    <Stack direction="horizontal" gap="2"  className  ="mb-4" >
+    <Stack direction="horizontal" gap="2"  classNam ="mb-4" >
     <h1 className ="me-auto">Budgets</h1>
     <Button varient="primary" onClick={()=> setShowAddBudgetModal(true)}>Add Budget</Button>
     <Button varient="outline-primary " onClick={openAddExpenseModal}>
@@ -63,8 +63,13 @@ function App() {
       <TotalBudgetCard />
     </div>
    </Container>
-   <AddBudgetModal show={showAddBudgetModal} handleClose= {()=> setShowAddBudgetModal(false)} />
-   <AddExpenseModal show={showAddExpenseModal} 
+   <AddBudgetModal
+      show={showAddBudgetModal}
+      defaultBudgetId={addExpenseModalBudgetId}
+      handleClose= {()=> setShowAddBudgetModal(false)}
+       />
+   <AddExpenseModal 
+   show={showAddExpenseModal} 
    defaultBudgetId={addExpenseModalBudgetId}
    handleClose= {()=> setShowAddExpenseModal(false)}
     />
