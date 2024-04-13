@@ -64,3 +64,7 @@ export default function AddExpenseModal({
     </Modal>
   )
 }
+
+// This component represents a modal for adding a new expense.
+// It captures input values for the description, amount, and budget, 
+// submits them via a form, and then closes the modal.

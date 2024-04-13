@@ -11,3 +11,7 @@ export default function UncategorizedBudgetCard(props) {
 
   return <BudgetCard amount={amount} name="Uncategorized" gray {...props} />
 }
+
+// Overall, this component calculates the total amount of uncategorized expenses
+// using the getBudgetExpenses function and renders a BudgetCard component representing 
+// the uncategorized expenses. If there are no uncategorized expenses, nothing is rendered.

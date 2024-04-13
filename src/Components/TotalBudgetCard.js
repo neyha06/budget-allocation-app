@@ -9,3 +9,7 @@ export default function TotalBudgetCard() {
 
   return <BudgetCard amount={amount} name="Total" gray max={max} hideButtons />
 }
+
+// Overall, this component calculates the total amount of expenses and the total maximum budget,
+// and then renders a BudgetCard component representing the total budget.
+// If there are no budgets defined, nothing is rendered.

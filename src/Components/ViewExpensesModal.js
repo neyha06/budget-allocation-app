@@ -54,3 +54,7 @@ export default function ViewExpensesModal({ budgetId, handleClose }) {
     </Modal>
   )
 }
+
+// Overall, this component represents a modal for viewing expenses associated with a budget.
+// It retrieves expenses from the budget context, displays them along with their descriptions and amounts, 
+// and provides functionality to delete individual expenses or the entire budget.

@@ -65,3 +65,7 @@ function getProgressBarVariant(amount, max) {
   if (ratio < 0.75) return "warning"
   return "danger"
 }
+
+// Overall, this component represents a card displaying budget details,
+//  including name, amount, and a progress bar indicating the usage of the budget.
+//   It also provides buttons for adding and viewing expenses.
